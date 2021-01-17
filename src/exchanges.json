@@ -1,28 +1,24 @@
 {
   "stockholm": {
-    "calendar": [
-      {
-        "2021": {
-          "closed": {
-            "January": [
-              1, 6
-            ],
-            "April": [
-              2, 5
-            ],
-            "May": [
-              13
-            ],
-            "June": [
-              25
-            ],
-            "December": [
-              24, 31
-            ]
-          }
-        }
+    "calendar": {
+      "2021": {
+        "January": [
+          1, 6
+        ],
+        "April": [
+          2, 5
+        ],
+        "May": [
+          13
+        ],
+        "June": [
+          25
+        ],
+        "December": [
+          24, 31
+        ]
       }
-    ],
+    },
     "timezone": "Europe/Stockholm",
     "openTime": {
       "hour": 9,

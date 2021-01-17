@@ -1,5 +1,6 @@
-import { exchange } from './exchange';
+import { exchange, availableExchanges } from './exchange';
 
 export default {
   exchange,
+  availableExchanges
 };
