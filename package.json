@@ -1,7 +1,7 @@
 {
   "name": "trading-calendar",
   "version": "1.0.0",
-  "description": "",
+  "description": "A NodeJS library that allows you to check if an exchange is open or closed.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -18,7 +18,17 @@
     "type": "git",
     "url": "git+https://github.com/davidsoederberg/trading-calendar.git"
   },
-  "keywords": [],
+  "keywords": [
+    "trading",
+    "calendar",
+    "market",
+    "opening",
+    "opened",
+    "open",
+    "closing",
+    "closed",
+    "api"
+  ],
   "author": "David Söderberg",
   "license": "MIT",
   "bugs": {

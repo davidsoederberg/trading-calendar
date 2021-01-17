@@ -1,6 +1,3 @@
-import { exchange, availableExchanges } from './exchange';
+import { exchange, supportedExchanges } from './exchange';
 
-export default {
-  exchange,
-  availableExchanges
-};
+module.exports = { exchange, supportedExchanges };
