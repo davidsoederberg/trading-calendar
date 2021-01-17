@@ -19,18 +19,6 @@ class Exchange {
     this.closeTime = exchangeInfo.closeTime;
     this.calendar = exchangeInfo.calendar;
   }
-  getName() {
-    return this.name;
-  }
-  getTimezone() {
-    return this.timezone;
-  }
-  getOpenTime() {
-    return this.openTime;
-  }
-  getCloseTime() {
-    return this.closeTime;
-  }
   isTradingToday(): boolean {
     return this.isTradingDayDateTime(DateTime.local().setZone(this.timezone));
   }
@@ -92,7 +80,4 @@ class Exchange {
 export function exchange(name: string): Exchange {
   return new Exchange(name);
 }
-
-export function availableExchanges(): string[] {
-  return Object.keys(exchanges);
-}
+export const supportedExchanges = Object.keys(exchanges);
