@@ -1,7 +1,7 @@
 Trading Calendar
 =======================================
 
-A NodeJS library that allows you to check if an exchange is open or closed. You can check if the market is trading today and if the trading session is live right now. You can also check historical and futures dates with the condition that the year is supported. Create multiple exchange objects to check multiple status of multiple exchanges easy.
+A NodeJS library that allows you to check if an exchange is open or closed. You can check if the market is trading today and if the trading session is live right now. You can also check historical and futures dates with the condition that the year is supported. Create multiple exchange objects to check status of multiple exchanges easily.
 
 Feel free to contribute with adding more exchanges and years.
 
