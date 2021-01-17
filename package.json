@@ -14,6 +14,10 @@
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
+  "publishConfig": {
+    "access": "public",
+    "branches": ["main"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davidsoederberg/trading-calendar.git"
