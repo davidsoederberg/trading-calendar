@@ -19,6 +19,9 @@
     "access": "public",
     "branches": ["main"]
   },
+  "release": {
+    "branches": ["main"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davidsoederberg/trading-calendar.git"
