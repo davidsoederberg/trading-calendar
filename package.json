@@ -27,7 +27,8 @@
     "open",
     "closing",
     "closed",
-    "api"
+    "api",
+    "exchange"
   ],
   "author": "David Söderberg",
   "license": "MIT",
