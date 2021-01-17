@@ -1,19 +1,18 @@
 import { DateTime } from 'luxon';
-import tradingCalendar from '../index';
+const { exchange, supportedExchanges } = require('../index');
 const currentExchanges = ['stockholm']
 
-tradingCalendar.availableExchanges();
 test('Available exchanges', () => {
-  expect(tradingCalendar.availableExchanges()).toEqual(currentExchanges);
+  expect(supportedExchanges).toEqual(currentExchanges);
 });
 
-const stockholm = tradingCalendar.exchange('stockholm');
+const stockholm = exchange('stockholm');
 
 test('Exchange information test', () => {
-  expect(stockholm.getName()).toEqual('stockholm');
-  expect(stockholm.getTimezone()).toEqual('Europe/Stockholm');
-  expect(stockholm.getOpenTime()).toEqual({hour: 9, minute: 0});
-  expect(stockholm.getCloseTime()).toEqual({hour: 17, minute: 30});
+  expect(stockholm.name).toEqual('stockholm');
+  expect(stockholm.timezone).toEqual('Europe/Stockholm');
+  expect(stockholm.openTime).toEqual({hour: 9, minute: 0});
+  expect(stockholm.closeTime).toEqual({hour: 17, minute: 30});
 });
 
 test('Exchange time tests with string to have incorrect format', () => {
@@ -100,5 +99,5 @@ test('Exchange day test with DateTime', () => {
 });
 
 test('Wrong name on exchange / exchange not available', () => {
-  expect(() => { tradingCalendar.exchange('not_a_name_of_an_exchange'); }).toThrow(Error);
+  expect(() => { exchange('not_a_name_of_an_exchange'); }).toThrow(Error);
 });
