@@ -1,7 +1,7 @@
 Trading Calendar
 =======================================
 
-![Build](https://github.com/davidsoederberg/trading-calendar/workflows/Node.js%20CI/badge.svg?branch=main) 
+![Test and Release](https://github.com/davidsoederberg/trading-calendar/workflows/Test%20and%20Release/badge.svg)
 ![npm](https://img.shields.io/npm/v/trading-calendar)
 ![licence](https://img.shields.io/npm/l/trading-calendar)
 
