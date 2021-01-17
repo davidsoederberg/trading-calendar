@@ -5,27 +5,27 @@ A NodeJS library that allows you to check if an exchange is open or closed. You 
 
 Feel free to contribute with adding more exchanges and years.
 
-### List of features
+## List of features
 
 *   Check if trading today
 *   Check if trading right now
 *   Check if trading at specific date (with or without time)
 
-### Supported exchanges
+## Supported exchanges
 
 * Stockholm
 
-### Supported years
+## Supported years
 
 * 2021
 
-### Installation
+## Installation
 
 ```shell 
 $ npm install trading-calendar 
 ```
 
-### Code Example
+## Code Example
 
 ```js 
 const { exchange } = require('trading-calendar');
@@ -38,7 +38,7 @@ if(stockholm.isTradingNow()){
 }
 ```
 
-### Documentation
+## Documentation
 
 Get all supported exchanges
 ```js
@@ -144,23 +144,23 @@ if(stockholm.isTradingTime(stringTime)){
 }
 ```
 
-### Tests
+## Tests
 
 Unit testing with Jest. Run with:
 ```shell
 $ npm test
 ```
 
-### Contributing
+## Contributing
 
 Feel free to add more features or fix bugs 
 
 Adding support for more exchanges and years is also appreciated.
 
-### Author
+## Author
 
 *   David Söderberg
 
-### License
+## License
 
 This project is licensed under the MIT License
