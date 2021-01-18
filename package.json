@@ -1,26 +1,24 @@
 {
   "name": "trading-calendar",
   "version": "1.0.2",
-  "description": "A NodeJS library that allows you to check if an exchange is open or closed.",
+  "description": "a Node.js library that allows you to check if an exchange is open or closed at a specific date (or in real-time).",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "lint": "tslint -p tsconfig.json",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "git add -A src",
-    "postversion": "git push && git push --tags",
-    "semantic-release": "semantic-release"
+    "lint": "tslint -p tsconfig.json"
   },
   "publishConfig": {
     "access": "public",
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   },
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   },
   "repository": {
     "type": "git",
@@ -53,6 +51,9 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.0.10",
     "@types/jest": "^26.0.20",
     "@types/luxon": "^1.25.1",
     "babel-jest": "^26.6.3",
