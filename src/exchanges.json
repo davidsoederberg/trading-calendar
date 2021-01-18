@@ -28,5 +28,32 @@
       "hour": 17,
       "minute": 30
     }
+  },
+  "oslo": {
+    "calendar": {
+      "2021": {
+        "January": [
+          1
+        ],
+        "April": [
+          1, 2, 5
+        ],
+        "May": [
+          13, 17, 24
+        ],
+        "December": [
+          24, 31
+        ]
+      }
+    },
+    "timezone": "Europe/Oslo",
+    "openTime": {
+      "hour": 9,
+      "minute": 0
+    },
+    "closeTime": {
+      "hour": 16,
+      "minute": 25
+    }
   }
 }
