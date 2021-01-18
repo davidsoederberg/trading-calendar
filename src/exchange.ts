@@ -39,7 +39,7 @@ class Exchange {
     }
     throw new Error(`Date:${date} must be of type string, Date or DateTime.`);
   }
-  private checkIfTradingDay(localTime: DateTime) {
+  private checkIfTradingDay(localTime: DateTime): boolean {
     if (localTime.weekday > 5) return false;
     const months = this.calendar[localTime.year];
     if(!months) throw new Error(`${localTime.year} is unsupported. Feel free to add more support with creating an issue on the github page.`);
@@ -68,7 +68,7 @@ class Exchange {
     }
     throw new Error(`Date:${date} must be of type string, Date or DateTime.`);
   }
-  private checkIfTradingTime(localTime: DateTime) {
+  private checkIfTradingTime(localTime: DateTime): boolean {
     if (!this.checkIfTradingDay(localTime)) return false;
     const hour = localTime.hour;
     const minute = localTime.minute;
