@@ -42,6 +42,7 @@ class Exchange {
   private checkIfTradingDay(localTime: DateTime) {
     if (localTime.weekday > 5) return false;
     const months = this.calendar[localTime.year];
+    if(!months) throw new Error(`${localTime.year} is unsupported. Feel free to add more support with creating an issue on the github page.`);
     if (months.hasOwnProperty(localTime.monthLong)) {
       return !months[localTime.monthLong].includes(localTime.day);
     }

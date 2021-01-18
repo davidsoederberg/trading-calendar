@@ -107,6 +107,12 @@ test('day with DateTime object', () => {
   expect(stockholm.isTradingDay(time)).toBe(false);
 });
 
+test('unsupported years', () => {
+  expect(() => { stockholm.isTradingDay('2020-04-02'); }).toThrow(Error);
+  expect(() => { stockholm.isTradingDay(new Date('2020-08-11')); }).toThrow(Error);
+  expect(() => { stockholm.isTradingDay(DateTime.fromFormat('2020-08-11', 'yyyy-MM-dd')); }).toThrow(Error);
+});
+
 test('wrong name on exchange or exchange not available', () => {
   expect(() => { exchange('not_a_name_of_an_exchange'); }).toThrow(Error);
 });
