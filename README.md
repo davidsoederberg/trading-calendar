@@ -28,7 +28,7 @@ Feel free to contribute with adding more exchanges and years.
 ## Installation
 
 ```shell 
-$ npm install trading-calendar 
+$ npm i trading-calendar
 ```
 
 ## Code Example
