@@ -1,7 +1,7 @@
 Trading Calendar
 =======================================
 
-![Test and Release](https://github.com/davidsoederberg/trading-calendar/workflows/Test%20and%20Release/badge.svg)
+![Build](https://github.com/davidsoederberg/trading-calendar/workflows/Build/badge.svg)
 ![npm](https://img.shields.io/npm/v/trading-calendar)
 ![licence](https://img.shields.io/npm/l/trading-calendar)
 
@@ -17,7 +17,9 @@ Feel free to contribute with adding more exchanges and years.
 
 ## Supported exchanges
 
-* Stockholm
+* new-york
+* stockholm
+* oslo
 
 ## Supported years
 
