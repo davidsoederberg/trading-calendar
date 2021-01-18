@@ -17,7 +17,9 @@ Feel free to contribute with adding more exchanges and years.
 
 ## Supported exchanges
 
-* Stockholm
+* new-york
+* stockholm
+* oslo
 
 ## Supported years
 
