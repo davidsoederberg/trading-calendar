@@ -55,5 +55,44 @@
       "hour": 16,
       "minute": 25
     }
+  },
+  "new-york": {
+    "calendar": {
+      "2021": {
+        "January": [
+          1, 18
+        ],
+        "February": [
+          15
+        ],
+        "April": [
+          2
+        ],
+        "May": [
+          31
+        ],
+        "July": [
+          5
+        ],
+        "September": [
+          6
+        ],
+        "November": [
+          25
+        ],
+        "December": [
+          24
+        ]
+      }
+    },
+    "timezone": "America/New_York",
+    "openTime": {
+      "hour": 9,
+      "minute": 30
+    },
+    "closeTime": {
+      "hour": 16,
+      "minute": 0
+    }
   }
 }
