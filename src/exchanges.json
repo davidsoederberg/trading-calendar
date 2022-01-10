@@ -17,6 +17,23 @@
         "December": [
           24, 31
         ]
+      },
+      "2022": {
+        "January": [
+          6
+        ],
+        "April": [
+          15, 18
+        ],
+        "May": [
+          26
+        ],
+        "June": [
+          6, 24
+        ],
+        "December": [
+          26
+        ]
       }
     },
     "timezone": "Europe/Stockholm",
@@ -43,6 +60,20 @@
         ],
         "December": [
           24, 31
+        ]
+      },
+      "2022": {
+        "April": [
+          14, 15, 18
+        ],
+        "May": [
+          17, 26
+        ],
+        "June": [
+          6
+        ],
+        "December": [
+          26
         ]
       }
     },
@@ -82,6 +113,35 @@
         ],
         "December": [
           24
+        ]
+      },
+      "2022": {
+        "January": [
+          17
+        ],
+        "February": [
+          21
+        ],
+        "April": [
+          15
+        ],
+        "May": [
+          30
+        ],
+        "June": [
+          20
+        ],
+        "July": [
+          4
+        ],
+        "September": [
+          5
+        ],
+        "November": [
+          24
+        ],
+        "December": [
+          26
         ]
       }
     },
