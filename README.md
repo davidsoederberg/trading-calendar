@@ -24,6 +24,7 @@ Feel free to contribute with adding more exchanges and years.
 ## Supported years
 
 * 2021
+* 2022
 
 ## Installation
 

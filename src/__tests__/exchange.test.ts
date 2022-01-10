@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
 const { exchange, supportedExchanges } = require('../index');
-const supportedYears = ['2021'];
+const supportedYears = ['2021', '2022'];
 
 const stockholm = exchange('stockholm');
 const oslo = exchange('oslo');
@@ -32,13 +32,13 @@ test('time with string - incorrect format', () => {
 });
 test('time with string - correct format', () => {
   expect(typeof stockholm.isTradingNow() === 'boolean').toBe(true);
-  expect(stockholm.isTradingTime('2021-01-01-20:30')).toBe(false);
+  expect(stockholm.isTradingTime('2022-01-01-20:30')).toBe(false);
   expect(stockholm.isTradingTime('2021-05-13-14:30')).toBe(false);
   expect(oslo.isTradingTime('2021-08-11-16:25')).toBe(false);
-  expect(stockholm.isTradingTime('2021-08-11-17:29')).toBe(true);
+  expect(stockholm.isTradingTime('2022-08-11-17:29')).toBe(true);
   expect(stockholm.isTradingTime('2021-08-11-08:59')).toBe(false);
   expect(stockholm.isTradingTime('2021-08-11-09:00')).toBe(true);
-  expect(newYork.isTradingTime('2021-08-11-09:29')).toBe(false);
+  expect(newYork.isTradingTime('2022-08-11-09:29')).toBe(false);
 });
 test('time with Date object', () => {
   let date = new Date('2021-08-11');
