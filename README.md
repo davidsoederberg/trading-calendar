@@ -20,6 +20,7 @@ Feel free to contribute with adding more exchanges and years.
 * new-york
 * stockholm
 * oslo
+* paris (2022)
 
 ## Supported years
 
