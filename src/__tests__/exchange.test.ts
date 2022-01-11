@@ -42,10 +42,10 @@ test('time with string - correct format', () => {
   expect(newYork.isTradingTime('2022-08-11-09:29')).toBe(false);
 });
 test('time with Date object', () => {
-  let date = new Date('2021-08-11');
+  let date = new Date('2022-08-11');
   date.setHours(8);
   date.setMinutes(59);
-  expect(stockholm.isTradingTime(date)).toBe(false);
+  expect(paris.isTradingTime(date)).toBe(false);
   date.setHours(9);
   date.setMinutes(0);
   expect(stockholm.isTradingTime(date)).toBe(true);
