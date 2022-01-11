@@ -45,7 +45,7 @@ test('time with Date object', () => {
   let date = new Date('2021-08-11');
   date.setHours(8);
   date.setMinutes(59);
-  expect(stockholm.isTradingTime(date)).toBe(false);
+  expect(paris.isTradingTime(date)).toBe(false);
   date.setHours(9);
   date.setMinutes(0);
   expect(stockholm.isTradingTime(date)).toBe(true);
