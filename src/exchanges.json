@@ -154,5 +154,26 @@
       "hour": 16,
       "minute": 0
     }
+  },
+  "paris": {
+    "calendar": {
+      "2022": {
+        "April": [
+          15, 18
+        ],
+        "December": [
+          26
+        ]
+      }
+    },
+    "timezone": "Europe/Paris",
+    "openTime": {
+      "hour": 9,
+      "minute": 0
+    },
+    "closeTime": {
+      "hour": 17,
+      "minute": 30
+    }
   }
 }

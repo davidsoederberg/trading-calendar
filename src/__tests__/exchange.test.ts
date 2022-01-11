@@ -5,10 +5,11 @@ const supportedYears = ['2021', '2022'];
 const stockholm = exchange('stockholm');
 const oslo = exchange('oslo');
 const newYork = exchange('new-york');
+const paris = exchange('paris');
 const exchanges = [stockholm, oslo, newYork];
 
 test('supported exchanges', () => {
-  expect(supportedExchanges).toEqual(['stockholm', 'oslo', 'new-york']);
+  expect(supportedExchanges).toEqual(['stockholm', 'oslo', 'new-york', 'paris']);
 });
 
 test('that exchanges had the correct info from exchanges.json', () => {
@@ -88,7 +89,7 @@ test('day with string - correct format', () => {
   expect(typeof stockholm.isTradingToday() === 'boolean').toBe(true);
   expect(stockholm.isTradingDay('2021-04-02')).toBe(false);
   expect(stockholm.isTradingDay('2021-01-17')).toBe(false);
-  expect(stockholm.isTradingDay('2021-08-11')).toBe(true);
+  expect(paris.isTradingDay('2022-08-11')).toBe(true);
 });
 test('day with Date object', () => {
   let date = new Date('2021-08-11');
