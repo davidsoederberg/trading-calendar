@@ -47,7 +47,7 @@
     "!lib/__test__/"
   ],
   "dependencies": {
-    "luxon": "^1.25.0"
+    "luxon": "^2.5.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
